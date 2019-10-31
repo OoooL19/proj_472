@@ -1,1 +1,68 @@
 <!DOCTYPE html>
+<html>
+
+<head>
+    <link href="index.css" rel="stylesheet" type="text/css">
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    </link>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css"> -->
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/js-sha256/build/sha256.min.js"></script>
+    <script src="index.js"></script>
+    <title>Assignment 2</title>
+</head>
+
+<body>
+    <img src="1_e3E0OQzfYCuWk0pket5dAA.png" class="rounded float-left" alt="...">
+    <div class="d-flex justify-content-center" id="searchBar">
+            <select class="form-control col-lg-4">
+                    <option>Popular</option>
+                    <option>All</option>
+                    <option>Top</option>
+                  </select>
+        <input class="form-control col-lg-6" type="search" placeholder="Search Reddit">
+        <button id="startBtn" class="btn btn-outline-primary mx-3 btn-lg" data-toggle="modal" data-target="#exampleModal">Log in</button>
+        <button id="startBtn" class="btn btn-primary mx-3 btn-lg" >Sign up</button>
+    </div>
+    <div class="btn white darken-4 col s10 m4">
+            <a href="/users/google-oauth/" style="text-transform:none">
+                <div class="left">
+                    <img width="6px" alt="Google &quot;G&quot; Logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png"/>
+                </div>
+                Login with Google
+            </a>
+       </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Sign in</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="recipient-name" placeholder="Username">
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="recipient-name" placeholder="Password">
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Sign in</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+</body>
+
+</html>
